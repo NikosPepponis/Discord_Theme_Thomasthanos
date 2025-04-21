@@ -221,3 +221,25 @@
 	--settingsheight: 	80;
 	--settingsbackground: 	transparent;
 }
+/* internet crash minimal */
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Κείμενο προβλήματος με Comic Sans και Amber */
+  [class="problemsText_a2f514"] {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ffb300;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 0;
+    text-shadow: none;
+  }
+  
+  /* Περιεχόμενο προβλήματος */
+  [class="problemsText_a2f514"]::before {
+    content: "The internet crashed";
+    font-size: large;
+    justify-content: center;
+    display: flex;
+  }
