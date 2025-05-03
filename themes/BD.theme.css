@@ -143,105 +143,188 @@
     background-color: #572626 !important;
   }
   
-  /* ===========================================================================
-     BETTERDISCORD MODAL
-     =========================================================================== */
-  
-  /* Modal Root */
-  .bd-modal-root.bd-modal-medium.bd-addon-modal {
-    background-color: #1F1F1F !important;
-    border: 1px solid #333333 !important;
-    border-radius: 12px !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7) !important;
-    overflow: hidden;
-  }
-  
-  /* Modal Header */
-  .bd-flex.bd-flex-horizontal.bd-flex-justify-start.bd-flex-align-center.bd-flex-no-wrap.bd-modal-header {
-    background-color: #292929 !important;
-    border-bottom: 1px solid #333333 !important;
-    padding: 16px !important;
-  }
-  
-  .bd-modal-header .bd-header-primary.bd-text-20.bd-text-strong {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 4px 12px !important;
-    background-color: rgba(255, 255, 255, 0.08) !important;
-    border-radius: 4px !important;
-    color: #F5F5F5 !important;
-    font-family: "Segoe UI", sans-serif !important;
-    font-size: 22px !important;
-    line-height: 28px !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.5px !important;
+/* BD UI REDIGN */
+
+/* Main modal container */
+.bd-modal-root.bd-addon-modal {
+    background: linear-gradient(145deg, #1c1b1b, #121212);
+    border-radius: 20px;
+    box-shadow:
+            0 4px 6px rgba(0, 0, 0, 0.6),
+            0 10px 20px rgba(0, 0, 0, 0.5),
+            inset 0 1px 2px rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    animation: fadeInScale 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+.bd-modal-root.bd-addon-modal .bd-modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, #222, #1a1a1a);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* μόνο κάτω */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+.bd-modal-root.bd-addon-modal .bd-header-primary {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: auto;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
-  }
-  
-  /* Modal Content */
-  .bd-modal-content.bd-scroller-base.bd-scroller-thin {
-    background-color: #1E1E1E !important;
-    color: #D0D0D0 !important;
-    padding: 16px !important;
-  }
-  
-  .bd-modal-content.bd-scroller-thin::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  .bd-modal-content.bd-scroller-thin::-webkit-scrollbar-track {
-    background: #2A2A2A;
-  }
-  
-  .bd-modal-content.bd-scroller-thin::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 3px;
-  }
-  
-  /* Modal Footer */
-  .bd-flex.bd-flex-reverse.bd-flex-justify-start.bd-flex-align-stretch.bd-flex-no-wrap.bd-modal-footer {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    padding: 12px 16px !important;
-    background-color: #292929 !important;
-    border-top: 1px solid #333333 !important;
-  }
-  
-  .bd-modal-footer .bd-button.bd-button-filled.bd-button-color-brand.bd-button-medium.bd-button-grow {
-    margin: 0 auto !important;
-    background: linear-gradient(135deg, #222222, #121212) !important;
-    color: #E0E0E0 !important;
-    border: 1px solid rgba(224, 224, 224, 0.27) !important;
+}
+
+
+/* Labels & descriptions */
+.bd-modal-root.bd-addon-modal .labelRow__0d850 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #f5f5f5;
+
+}
+
+.bd-modal-root.bd-addon-modal .description__ddd181 {
+    font-size: 13px;
+    color: #9e9e9e;
+    margin-top: 6px;
+}
+
+/* Dropdowns */
+.bd-modal-root.bd-addon-modal .select__3f413 {
+    background: #333 !important;
+    color: #e0e0e0 !important;
+    padding: 10px 14px !important;
     border-radius: 8px !important;
-    box-shadow:
-      0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-      0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
-    transition:
-      background 0.2s ease,
-      transform 0.1s ease,
-      box-shadow 0.2s ease !important;
-  }
-  
-  .bd-modal-footer .bd-button.bd-button-filled.bd-button-color-brand.bd-button-medium.bd-button-grow:hover {
-    background: linear-gradient(135deg, #2E2E2E, #1A1A1A) !important;
-    transform: translateY(-1px) scale(1.01) !important;
-    box-shadow:
-      0px 4px 5px -2px rgba(0, 0, 0, 0.2),
-      0px 1px 10px 0px rgba(0, 0, 0, 0.14),
-      0px 2px 4px 0px rgba(0, 0, 0, 0.12) !important;
-  }
-  
-  .bd-modal-footer .bd-button.bd-button-filled.bd-button-color-brand.bd-button-medium.bd-button-grow:active {
-    background: linear-gradient(135deg, #1A1A1A, #090909) !important;
-    transform: translateY(0) scale(0.99) !important;
-    box-shadow:
-      0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-      0px 1px 3px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.12) !important;
-  }
+    border: 1px solid #444 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    transition: background 0.3s ease, border 0.3s ease !important;
+}
+
+.bd-modal-root.bd-addon-modal .select__3f413:hover {
+    background: #3d3d3d !important;
+    border: 1px solid #555 !important;
+}
+
+.bd-modal-root.bd-addon-modal .container__87bf1.checked__87bf1 {
+    background: #2196f3 !important;
+}
+/* BetterDiscord buttons */
+.bd-modal-root.bd-addon-modal button.bd-button {
+    padding: 10px 24px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: #424242 !important;
+    color: #e0e0e0 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 36px !important;
+    box-shadow: none !important;
+    margin: auto !important;
+    width: 300px !important;
+}
+
+.bd-modal-root.bd-addon-modal button.bd-button:hover {
+    background: #616161 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+}
+
+.bd-modal-root.bd-addon-modal button.bd-button:active {
+    transform: scale(0.98) !important;
+    background: #757575 !important;
+}
+
+
+.bd-modal-root.bd-addon-modal button.bd-button-color-brand:hover {
+    background: #1976d2 !important;
+}
+
+.bd-modal-root.bd-addon-modal button.bd-button-color-brand:active {
+    background: #1565c0 !important;
+    transform: scale(0.98) !important;
+}
+
+/* Discord buttons (button_20d5) */
+.bd-modal-root.bd-addon-modal button.button_20d5.lookFilled_20d5.colorBrand_20d5.sizeMedium_20d5.grow_20d5 {
+    background: #2196f3 !important;
+    color: #ffffff !important;
+    padding: 10px 24px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 36px !important;
+    box-shadow: none !important;
+}
+
+.bd-modal-root.bd-addon-modal button.button_20d5.lookFilled_20d5.colorBrand_20d5.sizeMedium_20d5.grow_20d5:hover {
+    background: #1976d2 !important;
+}
+
+.bd-modal-root.bd-addon-modal button.button_20d5.lookFilled_20d5.colorBrand_20d5.sizeMedium_20d5.grow_20d5:active {
+    background: #1565c0 !important;
+    transform: scale(0.98) !important;
+}
+
+/* Inside button text */
+.bd-modal-root.bd-addon-modal button.button_20d5 .contents_20d5 {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+/* Footer */
+.bd-modal-root.bd-addon-modal .bd-modal-footer {
+    padding: 16px 24px !important;
+    border-top: 1px solid #333 !important;
+    text-align: right !important;
+    background: #1C1C1C;
+}
+.bd-modal-root.bd-addon-modal [class="button__201d5 lookFilled__201d5 colorBrand__201d5 sizeMedium__201d5 grow__201d5"] {
+    background: #2196f3 !important;
+    color: #ffffff !important;
+    padding: 10px 24px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 36px !important;
+    box-shadow: none !important;
+}
+
+.bd-modal-root.bd-addon-modal [class="button__201d5 lookFilled__201d5 colorBrand__201d5 sizeMedium__201d5 grow__201d5"]:hover {
+    background: #1976d2 !important;
+}
+
+.bd-modal-root.bd-addon-modal [class="button__201d5 lookFilled__201d5 colorBrand__201d5 sizeMedium__201d5 grow__201d5"]:active {
+    background: #1565c0 !important;
+    transform: scale(0.98) !important;
+}
+
+/* Animation */
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
 /* Κοινό στυλ για όλα τα toasts */
 .bd-toast {
     padding: 12px 16px;
